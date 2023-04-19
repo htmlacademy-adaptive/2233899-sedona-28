@@ -1,0 +1,11 @@
+.header {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  position: absolute;
+  color: #ffffff;
+  text-align: center;
+}
