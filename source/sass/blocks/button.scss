@@ -1,0 +1,18 @@
+.button {
+  border: none;
+}
+
+.button__type-secondary {
+  display: flex;
+  justify-content: center;
+  padding: 16px 49px;
+  margin: 0 18px;
+  max-width: 284px;
+  white-space: nowrap;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}

@@ -3,32 +3,33 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="stylesheet" href="./css/style.css">
 </head>
-
 
 <body class="page__body">
 
-  <header class="maim__header">
-    <a class="main--header__logo">
+  <header class="header">
+    <a class="header__logo">
       <img src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Sedona.">
     </a>
     <!--Навигация-->
-    <nav class="main--nav">
-      <button class="main-nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
-      <div class="main--nav__wrapper">
-        <ul class="main--nav__list site--list">
-          <li class="site--list__item site--list__item--active">
-            <a href="index.html">Главная</a>
+    <nav class="nav">
+      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <div class="nav__wrapper">
+        <ul class="nav__list site-list">
+          <li class="site-list__item site-list__item--active">
+            <a class="nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site--list__item">
-            <a href="catalog.html">Фото и видео</a>
+          <li class="site-list__item">
+            <a class="nav__link" href="catalog.html">Фото и видео</a>
           </li>
-          <li class="site--list__item">
-            <a href="form.html">Форма отзыва</a>
+          <li class="site-list__item">
+            <a class="nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site--list__item">
-            <a href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
+          <li class="site-list__item">
+            <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
           </li>
         </ul>
       </div>
@@ -36,29 +37,29 @@
   </header>
 
   <!--Main-->
-  <main class="main--container__form">
-    <h1 class="visually-hidden">Wellcom to Sedona</h1>
+  <main class="main__form">
+    <h1 class="visually-hidden">Добро пожаловать в седону</h1>
     <section class="stats__form">
-      <div class="stats--wrapper__form">
-        <div class="page--container__form">
-          <h2 class="main--review__form">Оставьте свой отзыв</h2>
-          <p class="main--review-text__form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
+      <div class="stats-wrapper__form">
+        <div class="page-container__form">
+          <h2 class="main-review__form">Оставьте свой отзыв</h2>
+          <p class="main-review-text__form">Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о
             посещенных вами достопримечательностях</p>
         </div>
 
         <!--Your Name-->
-        <div class="full-mane--introduce__form">
+        <div class="full-mane-introduce__form">
           <h3 class="full-name__form">Представьтесь:</h3>
-          <ul class="full-name__form--data">
-            <li class="full-name__form--passport">
+          <ul class="full-name__form-data">
+            <li class="full-name__form-passport">
               <p class="first-name__form">Имя*:</p>
               <input type="text" placeholder="Пётр">
             </li>
-            <li class="full-name__form--passport">
+            <li class="full-name__form-passport">
               <p class="last-name__form">Фамилия*:</p>
               <input type="text" placeholder="Пустота">
             </li>
-            <li class="full-name__form--passport">
+            <li class="full-name__form-passport">
               <p class="surname__form">Отчество*:</p>
               <input type="text" placeholder="Викторович">
             </li>
@@ -67,14 +68,14 @@
 
         <!--Contact information-->
         <div class="information__form">
-          <h3 class="contact--informatiom__form">Контактная информация:</h3>
-          <ul class="contact--emaill--number__form">
-            <li class="emaill--number__form emaill__form">
-              <p class="form__information--number">Контактный телефон*:</p>
+          <h3 class="contact-informatiom__form">Контактная информация:</h3>
+          <ul class="contact-emaill-number__form">
+            <li class="emaill-number__form emaill__form">
+              <p class="form__information-number">Контактный телефон*:</p>
               <input type="text" placeholder="Введите телефон">
             </li>
-            <li class="emaill--number__form number__form">
-              <p class="form__information--emaill">Электронная почта*:</p>
+            <li class="emaill-number__form number__form">
+              <p class="form__information-emaill">Электронная почта*:</p>
               <input type="text" placeholder="Введите e-maill">
             </li>
           </ul>
@@ -82,53 +83,53 @@
 
         <!--Your impression-->
         <div class="impression__form">
-          <h3 class="your--impression__form">Ваше общее впечатление:</h3>
-          <ul class="impression--feeling__form">
-            <li class="feeling--input__form">
-              <input class="feeling--input" type="radio" name="feeling" checked>
+          <h3 class="your-impression__form">Ваше общее впечатление:</h3>
+          <ul class="impression-feeling__form">
+            <li class="feeling-input__form">
+              <input class="feeling-input" type="radio" name="feeling" checked>
               <p class="feeling__form">Скорее положительное</p>
             </li>
-            <li class="feeling--input__form">
-              <input class="feeling--input" type="radio" name="feeling">
+            <li class="feeling-input__form">
+              <input class="feeling-input" type="radio" name="feeling">
               <p class="feeling__form">Скорее отрицательное</p>
             </li>
-            <li class="feeling--input__form">
-              <input class="feeling--input" type="radio" name="feeling">
+            <li class="feeling-input__form">
+              <input class="feeling-input" type="radio" name="feeling">
               <p class="feeling__form">Затрудняюсь ответить</p>
             </li>
           </ul>
         </div>
 
         <!--Visited attractions-->
-        <div class="visited--attractions__form">
+        <div class="visited-attractions__form">
           <h3 class="visited__attractions">Посещенные достопримечательности:</h3>
           <ul class="attractions__form">
             <li class="sedona__attractions">
-              <input class="attractions--input" type="checkbox" name="attractions" checked>
-              <p class="names--attractions">Мост Дьявола</p>
+              <input class="attractions-input" type="checkbox" name="attractions" checked>
+              <p class="names-attractions">Мост Дьявола</p>
             </li>
             <li class="sedona__attractions">
-              <input class="attractions--input" type="checkbox" name="attractions" checked>
-              <p class="names--attractions">Гора-Колокол</p>
+              <input class="attractions-input" type="checkbox" name="attractions" checked>
+              <p class="names-attractions">Гора-Колокол</p>
             </li>
             <li class="sedona__attractions">
-              <input class="attractions--input" type="checkbox" name="attractions" checked>
-              <p class="names--attractions">Слайд-парк</p>
+              <input class="attractions-input" type="checkbox" name="attractions" checked>
+              <p class="names-attractions">Слайд-парк</p>
             </li>
             <li class="sedona__attractions">
-              <input class="attractions--input" type="checkbox" name="attractions">
-              <p class="names--attractions">Красные скалы</p>
+              <input class="attractions-input" type="checkbox" name="attractions">
+              <p class="names-attractions">Красные скалы</p>
             </li>
           </ul>
         </div>
 
         <!--Your-emotion-->
-        <div class="your--emotions__form">
-          <h3 class="your--emotions">Опишите свои эмоции:</h3>
-          <input class="emotions--input" type="text" placeholder="Опишите подробно все свои восторги">
+        <div class="your-emotions__form">
+          <h3 class="your-emotions">Опишите свои эмоции:</h3>
+          <input class="emotions-input" type="text" placeholder="Опишите подробно все свои восторги">
 
-          <button class="comment--button button" type="button">Отпривить отзыв</button>
-          <p class="necessarily--comment">* — Обязательные поля</p>
+          <button class="comment-button button" type="button">Отпривить отзыв</button>
+          <p class="necessarily-comment">* — Обязательные поля</p>
         </div>
 
       </div>
@@ -136,33 +137,33 @@
   </main>
 
   <!--Footer-->
-  <footer class="main--footer">
-    <div class="main--footer__wrapper">
+  <footer class="footer">
+    <div class="footer__wrapper">
 
-      <div class="main__footer--sedona">
-        <a class="sedona__footer" href="#">#visitsedona</a>
+      <div class="footer__hash">
+        <a class="footer__hash-text" href="#">#visitsedona</a>
       </div>
 
-      <ul class="social__list">
+      <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <img src="#" alt=".">
+            <img src="#" alt="VK.">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <img src="#" alt=".">
+            <img src="#" alt="Youtube.">
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <img src="#" alt=".">
+            <img src="#" alt="Telegram.">
           </a>
         </li>
       </ul>
 
       <!--Разработано в HTML Academy-->
-      <div class="main--footer__copyright copyright">
+      <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
         <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src=".//img/htmlacademy.svg"
             width="27" height="34" alt="HTML Academy."></a>
