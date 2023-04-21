@@ -1,1 +1,20 @@
-// Начните писать стили здесь
+// Базовые настройки
+@use "./base/fonts.scss";
+@use "./base/page.scss";
+@use "./base/page__body.scss";
+@use "./base/visually-hidden.scss";
+
+// Шапка
+@use "./blocks/header.scss";
+@use "./blocks/nav.scss";
+
+// Main
+@use "./blocks/main.scss";
+// Настоящий городок
+@use "./blocks/advantages.scss";
+
+// Кнопки
+@use "./blocks/button.scss";
+
+//Footer
+@use "./blocks/footer.scss";
