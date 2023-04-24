@@ -4,6 +4,7 @@
 @use "./base/page__body.scss";
 @use "./base/visually-hidden.scss";
 
+// index
 // Шапка
 @use "./blocks/header.scss";
 @use "./blocks/nav.scss";
@@ -18,3 +19,9 @@
 
 //Footer
 @use "./blocks/footer.scss";
+
+
+// Catalog
+// Main
+@use "./blocks-catalog/main-catalog.scss";
+@use "./blocks-catalog/advantages-catalog.scss";

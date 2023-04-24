@@ -5,7 +5,14 @@
 }
 
 .header__logo {
+  width: 185px;
+  height: 96px;
   position: absolute;
   color: #ffffff;
   text-align: center;
+}
+
+.header__logo-on {
+  padding: 0 67px;
+  display: flex;
 }

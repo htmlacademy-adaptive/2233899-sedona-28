@@ -10,12 +10,15 @@
 
 <body class="page__body">
   <header class="header">
-    <a class="header__logo">
-      <img src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Sedona.">
+    <a class="header__logo header__logo-on">
+      <img src="img/logo.png" width="185" height="96" alt="Логотип Sedona.">
     </a>
     <!--Навигация-->
     <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="nav__toggle-open" type="button">
+        <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть меню</span></button>
+        <button class="nav__toggle" type="button">
+          <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть меню</span></button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -42,13 +45,12 @@
       <div class="stats__wrapper-catalog">
         <div class="page__container-catalog">
           <h2 class="main__catalog-photo">Фото и видео</h2>
-          <p class="main__catalog-photo-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-            забыть
+          <p class="main__catalog-photo-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
             о политике и экономике.</p>
         </div>
 
         <!--Фото-->
-        <ul class="advantages__catalog">
+        <ul class="advantages__catalog-main">
           <li class="advantages__catalog">
             <img src="#" alt=".">
             <h3 class="advantages__photo-description">Неродные просторы</h3>
