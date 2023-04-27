@@ -1,3 +1,11 @@
+
+// КАРТА
+.sedona__map {
+  margin-top: 49px;
+
+  border: none;
+}
+
 .main__head {
   padding-top: 32px;
   font-weight: 700;
@@ -31,4 +39,21 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
+}
+
+// CATALOG
+.main__catalog-photo {
+  margin: 0;
+  padding: 30px 0;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.main__catalog-photo-text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
 }

@@ -1,3 +1,5 @@
+@use "../setup/mixins.scss" as m;
+
 .nav {
   color: #ffffff;
 }
@@ -10,22 +12,31 @@
   border: none;
   background: fixed;
   cursor: pointer;
-  display: flex;
+  display: none;
 }
 
 .nav__toggle-on {
-  padding: 0;
   display: flex;
+  position: absolute;
   top: 17px;
   right: 17px;
   border: none;
   background-color: #ffffff;
   cursor: pointer;
+  padding: 0;
 }
-
 
 .nav__wrapper {
   background-color: #81b3d2;
+  display: none;
+
+  @include m.tablet {
+    display: none;
+  }
+
+  @include m.desktop {
+    display: none;
+  }
 }
 
 .nav__list {
@@ -41,7 +52,6 @@
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
-
   text-transform: uppercase;
 }
 
@@ -52,4 +62,3 @@
   min-height: 55px;
   box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
 }
-

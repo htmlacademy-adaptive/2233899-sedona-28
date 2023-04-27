@@ -1,8 +1,8 @@
+@use "./setup/variables.scss";
+@use "./setup/mixins.scss";
 // Базовые настройки
 @use "./base/fonts.scss";
 @use "./base/page.scss";
-@use "./base/page__body.scss";
-@use "./base/visually-hidden.scss";
 
 // index
 // Шапка
@@ -20,8 +20,3 @@
 //Footer
 @use "./blocks/footer.scss";
 
-
-// Catalog
-// Main
-@use "./blocks-catalog/main-catalog.scss";
-@use "./blocks-catalog/advantages-catalog.scss";
