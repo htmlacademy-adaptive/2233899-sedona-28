@@ -6,27 +6,101 @@
 
 .advantages__title {
   padding-top: 40px;
-  padding-bottom: 49px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
 }
 
-.advantages__title--second {
-  padding-bottom: 16px;
-  padding-top: 31px;
-}
-
-.advantages__title--third {
-  padding-top: 24px;
-}
-
 .advantages__title--city {
   padding-top: 33px;
 }
 
+.advantages__title--second {
+  padding-bottom: 16px;
+  padding-top: 31px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+.advantages__title--third {
+  padding-top: 24px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+}
+
+
+// after
+.advantages__title--city::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№1-";
+  color: #ffffff;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№2-";
+  color: #ffffff;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title--third::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№3-";
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title--third-second::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№4-";
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title--third-third::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№5-";
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+// item
+
 .advantages__item--with-image {
+  margin-top: 46px;
+  min-width: 320px;
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.advantages__item--with-image-second {
+  margin-top: 32px;
   min-width: 320px;
   color: #ffffff;
   background-color: #81b3d2;
@@ -35,6 +109,8 @@
 .advantages__item--color-second {
   background-color: #eeeeee;
 }
+
+// description
 
 .advantages__description {
   color: #333333;
@@ -50,3 +126,42 @@
   line-height: 21px;
   margin: 0;
 }
+
+// eat
+
+.advantages__image {
+  padding-top: 40px;
+  object-fit: cover;
+}
+
+.advantages__eat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 23px;
+  right: -18px;
+}
+
+// CATALOG
+.advantages__catalog-main {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.advantages__photographer {
+  text-transform: none;
+}
+
+.advantages__catalog {
+  list-style-type: none;
+}
+
+.advantages__photo-description {
+  left: auto;
+}
+
+// FORM
+

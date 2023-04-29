@@ -1,0 +1,20 @@
+@use "../setup/variables.scss" as v;
+
+@mixin phones {
+  @media (min-width: v.$phone-width) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: v.$tablet-width) {
+    @content;
+  }
+}
+
+
+@mixin desktop {
+  @media (min-width: v.$desktop-width) {
+    @content;
+  }
+}

@@ -1,11 +1,22 @@
 .header {
+  width: 320px;
+  height: 56px;
+  background-color: #ffffff;
   position: relative;
   display: flex;
   flex-direction: column;
 }
 
 .header__logo {
+  width: 185px;
+  height: 96px;
   position: absolute;
   color: #ffffff;
   text-align: center;
 }
+
+.header__logo-on {
+  padding: 0 67px;
+  display: flex;
+}
+

@@ -1,9 +1,10 @@
+@use "./setup/variables.scss";
+@use "./setup/mixins.scss";
 // Базовые настройки
 @use "./base/fonts.scss";
 @use "./base/page.scss";
-@use "./base/page__body.scss";
-@use "./base/visually-hidden.scss";
 
+// index
 // Шапка
 @use "./blocks/header.scss";
 @use "./blocks/nav.scss";
@@ -18,3 +19,4 @@
 
 //Footer
 @use "./blocks/footer.scss";
+
