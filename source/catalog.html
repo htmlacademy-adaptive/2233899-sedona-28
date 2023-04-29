@@ -9,14 +9,16 @@
 </head>
 
 <body class="page__body">
-
   <header class="header">
-    <a class="header__logo">
-      <img src="img/logotype-phone.svg" width="185" height="96" alt="Логотип Sedona.">
+    <a class="header__logo header__logo-on">
+      <img src="img/logo.png" width="185" height="96" alt="Логотип Sedona.">
     </a>
     <!--Навигация-->
     <nav class="nav">
-      <button class="nav__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+      <button class="nav__toggle-open" type="button">
+        <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть меню</span></button>
+        <button class="nav__toggle" type="button">
+          <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть меню</span></button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
           <li class="site-list__item site-list__item--active">
@@ -38,63 +40,69 @@
 
   <!--Main-->
   <main class="main__catalog">
-    <h1 class="visually-hidden">Добро пожаловать в седону</h1>
+    <div class="hero-catalog">
+      <h1 class="visually-hidden">Добро пожаловать в седону</h1>
+      <img class="hero__text-catalog" src="./img/sedona-catalog.png" width="229" height="39" alt="Каньен в седоне.">
+      </div>
     <section class="stats__catalog">
       <div class="stats__wrapper-catalog">
         <div class="page__container-catalog">
           <h2 class="main__catalog-photo">Фото и видео</h2>
-          <p class="main__catalog-photo-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам
-            забыть
+          <p class="main__catalog-photo-text">Не можете решиться на путешествие из-за курса? Фотографии помогут вам забыть
             о политике и экономике.</p>
         </div>
 
         <!--Фото-->
-        <ul class="advantages__catalog">
+        <ul class="advantages__catalog-main">
           <li class="advantages__catalog">
-            <img src="#" alt=".">
+            <img class="catalog__photo" src="./img/photo-catalog-1.png" width="280" height="280" alt="Дорога.">
             <h3 class="advantages__photo-description">Неродные просторы</h3>
             <p class="advantages__photographer">Автор фото: Борис</p>
-            <button class="advantages__catalog-like">
-              <img src="#" width="23" height="21" alt="like">
+            <button type="button" class="button advantages__catalog-like">
+              <img src="./img/like.svg" width="23" height="21" alt="like">
             </button>
-            <sup>1350</sup>
+            <sup class="catalog__like">1350</sup>
           </li>
           <li class="advantages__catalog">
-            <img src="#" alt=".">
+            <img class="catalog__photo" src="./img/photo-catalog-2.png" width="280" height="280" alt="Красивое ростение.">
             <h3 class="advantages__photo-description">Местная растительность</h3>
             <p class="advantages__photographer">Автор фото: Сергей</p>
-            <button class="advantages__catalog-like">
-              <img src="#" width="23" height="21" alt="like">
+            <button type="button" class="button advantages__catalog-like">
+              <img src="./img/like.svg" width="23" height="21" alt="like">
             </button>
-            <sup>143</sup>
+            <sup class="catalog__like">143</sup>
           </li>
           <li class="advantages__catalog">
-            <img src="#" alt=".">
+            <img class="catalog__photo" src="./img/photo-catalog-3.png" width="280" height="280" alt="Дорога через лес и горы.">
             <h3 class="advantages__photo-description">Дорога на север</h3>
             <p class="advantages__photographer">Автор фото: Петр</p>
-            <button class="advantages__catalog-like">
-              <img src="#" width="23" height="21" alt="like">
+            <button type="button" class="button advantages__catalog-like">
+              <img src="./img/like.svg" width="23" height="21" alt="like">
             </button>
-            <sup>96</sup>
+            <sup class="catalog__like">96</sup>
           </li>
           <li class="advantages__catalog">
-            <img src="#" alt=".">
+            <img class="catalog__photo" src="./img/photo-catalog-4.png" width="280" height="280" alt="Каньен.">
             <h3 class="advantages__photo-description">Мост дьявола</h3>
             <p class="advantages__photographer">Автор фото: Антон</p>
-            <button class="advantages__catalog-like">
-              <img src="#" width="23" height="21" alt="like">
+            <button type="button" class="button advantages__catalog-like">
+              <img src="./img/like.svg" width="23" height="21" alt="like">
             </button>
-            <sup>254</sup>
+            <sup class="catalog__like">254</sup>
           </li>
         </ul>
 
         <div class="page__container-presentation">
           <h2 class="main__catalog-presentation">Все еще сомневаетесь?</h2>
-          <p class="main__catalog-presentation-text">Смотрите видеопрезентацию и скорее за билетами, пока они не
+          <p class="main__catalog-presentation-text">Смотрите видеопрезентацию<br> и скорее за билетами, пока они не
             подорожали в
             очередной раз!</p>
         </div>
-        <img src="#" alt=".">
+
+        <div class="video__catalog">
+          <img class="button__video" width="280" height="177" src="./img/video-catalog.png" alt="Видео.">
+        </div>
+
       </div>
     </section>
   </main>
@@ -111,17 +119,26 @@
       <ul class="social">
         <li class="social__item">
           <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-            <img src="#" alt="VK.">
-          </a>
-        </li>
-        <li class="social__item">
-          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
-            <img src="#" alt="Youtube.">
+            <svg class="footer__connection" alt="vk." width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" fill="#81B3D2"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M35.45 17.948C35.616 17.402 35.45 17 34.655 17H32.03C31.362 17 31.054 17.347 30.887 17.73C30.887 17.73 29.552 20.926 27.661 23.002C27.049 23.604 26.771 23.795 26.437 23.795C26.27 23.795 26.019 23.604 26.019 23.057V17.948C26.019 17.292 25.835 17 25.279 17H21.151C20.734 17 20.483 17.304 20.483 17.593C20.483 18.214 21.429 18.358 21.526 20.106V23.904C21.526 24.737 21.373 24.888 21.039 24.888C20.149 24.888 17.984 21.677 16.699 18.003C16.45 17.288 16.198 17 15.527 17H12.9C12.15 17 12 17.347 12 17.73C12 18.412 12.89 21.8 16.145 26.281C18.315 29.341 21.37 31 24.153 31C25.822 31 26.028 30.632 26.028 29.997V27.684C26.028 26.947 26.186 26.8 26.715 26.8C27.105 26.8 27.772 26.992 29.33 28.467C31.11 30.216 31.403 31 32.405 31H35.03C35.78 31 36.156 30.632 35.94 29.904C35.702 29.18 34.852 28.129 33.725 26.882C33.113 26.172 32.195 25.407 31.916 25.024C31.527 24.533 31.638 24.314 31.916 23.877C31.916 23.877 35.116 19.451 35.449 17.948H35.45Z"/>
+            </svg>
           </a>
         </li>
         <li class="social__item">
           <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-            <img src="#" alt="Telegram.">
+            <svg class="footer__connection" width="48" height="48" alt="telegtam." viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" fill="#81B3D2"/>
+              <path d="M34.4393 16.6223L31.2705 31.566C31.0313 32.6205 30.408 32.883 29.5223 32.3865L24.6938 28.8285L22.3643 31.0695C22.1063 31.3275 21.891 31.5428 21.3938 31.5428L21.741 26.6258L30.6893 18.54C31.0785 18.1935 30.6045 18.0008 30.0848 18.348L19.0223 25.314L14.2598 23.823C13.224 23.4998 13.2053 22.7873 14.4758 22.29L33.1035 15.1133C33.966 14.79 34.7205 15.3053 34.4393 16.623V16.6223Z"/>
+            </svg>
+          </a>
+        </li>
+        <li class="social__item">
+          <a class="social__link social__link--youtube" href="https://www.youtube.com/user/htmlacademyru">
+            <svg class="footer__connection" alt="youtube." width="48" height="48" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <rect width="48" height="48" fill="#81B3D2"/>
+              <path d="M31.1813 17H16.8133C15.3062 17 14 18.3 14 19.8V28.1C14 29.7 15.3062 31 16.8133 31H31.1813C32.7889 31 33.9946 29.7 33.9946 28.2V19.8C34.095 18.3 32.7889 17 31.1813 17ZM21.0333 27.4V20.6L27.8656 24L21.0333 27.4Z"/>
+            </svg>
           </a>
         </li>
       </ul>
