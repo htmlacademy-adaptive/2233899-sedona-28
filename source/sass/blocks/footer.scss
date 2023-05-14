@@ -1,16 +1,32 @@
+@use "../setup/mixins.scss" as m;
+
 .footer {
-  min-height: 235px;
+  height: 235px;
   display: grid;
+
+  @include m.tablet {
+    max-height: 120px;
+  }
 }
 
 .footer__wrapper {
   display: grid;
   justify-content: space-evenly;
+
+  @include m.tablet {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
 }
 
 .footer__hash {
   padding-top: 33px;
   height: 30px;
+
+  @include m.tablet {
+    padding: 0;
+  }
 }
 
 .footer__hash-text {
@@ -47,7 +63,7 @@
 
 .footer__copyright {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   height: 35px;
   align-items: center;
 }
@@ -63,3 +79,13 @@
   padding: 0 3px;
 }
 
+.footer__html {
+  color: #000000;
+}
+
+.copyright__text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding-right: 12px;
+}

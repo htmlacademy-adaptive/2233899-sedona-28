@@ -1,0 +1,175 @@
+@use "../setup/mixins.scss" as m;
+
+.hero-catalog {
+  height: 158px;
+  background-position: bottom;
+  background-image: url("../img/hero.png");
+
+  @include m.tablet {
+    min-height: 290px;
+  }
+}
+
+.hero-catalog::after {
+  content: "";
+  margin-top: 6px;
+  display: block;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/sedona-after.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include m.tablet {
+    content: "";
+    margin-top: 57px;
+    display: block;
+    width: 100%;
+    height: 57px;
+    background-image: url("../img/sedona-after.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+}
+
+.hero__text-catalog {
+  padding-top: 52px;
+
+  @include m.tablet {
+    width: 456px;
+    height: 77px;
+    padding-top: 95px;
+  }
+}
+
+.main__catalog-photo {
+  margin: 0;
+  padding: 30px 0;
+  padding-top: 20px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+  @include m.tablet {
+    padding-top: 0;
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+
+.main__catalog-photo-text {
+  margin: 0;
+  padding: 0 20px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 26px;
+
+  @include m.tablet {
+    padding: 0 155px;
+    margin-bottom: 67px;
+  }
+}
+
+.page__container-catalog {
+  padding-top: 37px;
+
+  @include m.tablet {
+    padding-top: 66px;
+  }
+}
+
+.page__container-catalog::after {
+  content: "";
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+
+  @include m.tablet {
+    display: none;
+  }
+}
+
+.video__catalog {
+  position: relative;
+  min-height: 177px;
+  width: 100%;
+}
+
+.button__img {
+  @include m.tablet {
+    width: 648px;
+    min-height: 500px;
+    object-fit: cover;
+  }
+
+  @include m.desktop {
+    width: 800px;
+    height: 500px;
+  }
+}
+
+.page__container-presentation {
+  padding-top: 43px;
+
+  @include m.tablet {
+    padding-top: 58px;
+  }
+}
+
+.main__catalog-presentation {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+
+  @include m.tablet {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.main__catalog-presentation-text {
+  padding: 35px 27px;
+  padding-top: 20px;
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include m.tablet {
+    padding: 35px 150px;
+    padding-bottom: 66px;
+  }
+
+  @include m.desktop {
+    padding: 35px 350px;
+    padding-bottom: 64px;
+  }
+}
+
+.catalog__photo {
+  padding-top: 24px;
+
+  @include m.tablet {
+    padding: 0;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.catalog__photo-first {
+  padding: 0;
+  padding-top: 24px;
+
+  @include m.tablet {
+    padding: 0;
+  }
+
+  @include m.desktop {
+    height: 400px;
+  }
+}
+

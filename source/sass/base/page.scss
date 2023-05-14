@@ -1,3 +1,6 @@
+@use "../setup/mixins.scss" as m;
+
+
 .page {
   background-color: #e7e5e5;
   font-family: "PT Sans", "Arial", "Helvetica", sans-serif;
@@ -10,4 +13,15 @@
   background-color: #ffffff;
 
   text-transform: uppercase;
+
+  @include m.tablet {
+    max-width: 768px;
+    width: 100%;
+  }
+
+  @include m.desktop {
+    max-width: 1200px;
+    width: 100%;
+  }
 }
+
