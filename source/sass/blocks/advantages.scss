@@ -1,7 +1,16 @@
+@use "../setup/mixins.scss" as m;
+@use "./advantages-catalog.scss";
+
 .advantages {
   padding: 0;
   margin: 0;
   list-style-type: none;
+
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin-top: 55px;
+  }
 }
 
 .advantages__title {
@@ -10,10 +19,24 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+
+  @include m.tablet {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @include m.desktop {
+    padding-right: 120px;
+    padding-left: 120px;
+  }
 }
 
 .advantages__title--city {
   padding-top: 33px;
+
+  @include m.tablet {
+    padding-top: 52px;
+  }
 }
 
 .advantages__title--second {
@@ -23,6 +46,12 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+
+  @include m.tablet {
+    padding-top: 26px;
+    padding-bottom: 26px;
+    font-size: 21px;
+  }
 }
 
 .advantages__title--third {
@@ -31,6 +60,10 @@
   font-size: 18px;
   line-height: 26px;
   margin: 0;
+
+  @include m.tablet {
+    padding: 41px 60px 0;
+  }
 }
 
 
@@ -92,22 +125,92 @@
 
 // item
 
+.advantages__item {
+  @include m.tablet {
+    box-sizing: border-box;
+  }
+
+  @include m.desktop {
+    min-width: 400px;
+  }
+}
+
+.advantages__item-eat {
+  display: grid;
+  grid-template-columns: 65px 237px;
+  text-align: left;
+  box-sizing: border-box;
+
+  @include m.tablet {
+    display: block;
+    text-align: center;
+  }
+
+  @include m.desktop {
+    height: 330px;
+  }
+}
+
 .advantages__item--with-image {
+  padding: 0;
+  margin: 0;
   margin-top: 46px;
   min-width: 320px;
   color: #ffffff;
   background-color: #81b3d2;
+  display: grid;
+
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1 /-1;
+    margin: 0;
+    max-height: 256px;
+  }
+
+  @include m.desktop {
+    grid-template-columns: 1fr 2fr;
+  }
 }
 
-.advantages__item--with-image-second {
-  margin-top: 32px;
-  min-width: 320px;
-  color: #ffffff;
-  background-color: #81b3d2;
+.advantages__item-second {
+  @include m.desktop {
+    grid-template-columns: 2fr 1fr;
+  }
+}
+
+.advantages__swap {
+  @include m.tablet {
+    order: 2;
+  }
+}
+
+.with-image-second {
+  padding-top: 32px;
+  margin: 0;
+
+  @include m.tablet {
+    padding: 0;
+  }
 }
 
 .advantages__item--color-second {
   background-color: #eeeeee;
+}
+
+
+.advantages__item--color-second-one {
+  padding-bottom: 28px;
+
+  @include m.tablet {
+    padding: 0;
+  }
+}
+
+.advantages__item-stylize {
+  @include m.tablet {
+    display: flex;
+  }
 }
 
 // description
@@ -118,6 +221,14 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+
+  @include m.tablet {
+    padding: 0 31px 60px;
+  }
+
+  @include m.desktop {
+    padding: 0 60px 70px;
+  }
 }
 
 .advantages__description--with-image {
@@ -125,6 +236,36 @@
   font-size: 14px;
   line-height: 21px;
   margin: 0;
+
+  @include m.tablet {
+    padding: 0 31px 33px;
+  }
+
+  @include m.desktop {
+    padding: 0 100px 0;
+  }
+}
+
+.advantages__description-image {
+  @include m.desktop {
+    padding: 0 80px 0;
+  }
+}
+
+.advantages__description-third {
+  @include m.tablet {
+    padding: 0 38px 38px;
+  }
+}
+
+.advantages__description-one {
+  @include m.tablet {
+    padding: 0 38px 64px;
+  }
+
+  @include m.desktop {
+    padding: 0 102px 70px;
+  }
 }
 
 // eat
@@ -132,36 +273,37 @@
 .advantages__image {
   padding-top: 40px;
   object-fit: cover;
+
+  @include m.tablet {
+    width: 512px;
+    height: 256px;
+    padding: 0;
+  }
+
+  @include m.desktop {
+    width: 100%;
+  }
 }
 
 .advantages__eat {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
   align-items: center;
   padding-top: 23px;
   right: -18px;
+
+  @include m.tablet {
+    position: static;
+    display: inline;
+    padding: 0;
+    padding-top: 60px;
+    width: 75px;
+    height: 75px;
+  }
+
+  @include m.desktop {
+    width: 80px;
+    height: 80px;
+    padding-top: 70px;
+  }
 }
-
-// CATALOG
-.advantages__catalog-main {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.advantages__photographer {
-  text-transform: none;
-}
-
-.advantages__catalog {
-  list-style-type: none;
-}
-
-.advantages__photo-description {
-  left: auto;
-}
-
-// FORM
-

@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="./img/32.svg">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -16,21 +17,23 @@
     <!--Навигация-->
     <nav class="nav">
       <button class="nav__toggle-on" type="button">
-        <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть меню</span></button>
-        <button class="nav__toggle" type="button">
-          <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть меню</span></button>
+        <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть
+          меню</span></button>
+      <button class="nav__toggle" type="button">
+        <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть
+          меню</span></button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item-second">
             <a class="nav__link" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
-            <a class="nav__link" href="form.html">Форма отзыва</a>
+            <a class="nav__link nav__link--active" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item-html">
             <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
           </li>
         </ul>
@@ -40,9 +43,9 @@
 
   <!--Main-->
   <main class="main__form">
-    <div class="hero-catalog">
+    <div class="hero-form">
       <h1 class="visually-hidden">Добро пожаловать в седону</h1>
-      <img class="hero__text-catalog" src="./img/sedona-catalog.png" width="229" height="39" alt="Каньен в седоне.">
+      <img class="hero__text-catalog" src="./img/sedona.svg" width="229" height="39" alt="Каньен в седоне.">
       </div>
     <section class="stats__form">
       <div class="stats-wrapper__form">
@@ -52,6 +55,7 @@
             посещенных вами достопримечательностях</p>
         </div>
 
+        <div class="form__construction">
         <!--Your Name-->
         <div class="full-mane-introduce__form">
           <h3 class="full-name__form">Представьтесь:</h3>
@@ -62,13 +66,13 @@
                 <input class="form__name" type="text" placeholder="Пётр">
               </div>
             </li>
-            <li class="full-name__form-passport full-name__top-distance">
+            <li class="full-name__form-passport full-name__one-distance">
               <label class="first-name__form">Фамилия*:</label>
               <div class="form__name-editor">
                 <input class="form__name" type="text" placeholder="Пустота">
               </div>
             </li>
-            <li class="full-name__form-passport full-name__top-distance">
+            <li class="full-name__form-passport full-name__one-distance">
               <label class="first-name__form">Отчество*:</label>
               <div class="form__name-editor">
                 <input class="form__name" type="text" placeholder="Викторович">
@@ -84,35 +88,39 @@
             <li class="emaill-number__form emaill__form">
               <label class="form__information-number">Контактный телефон*:</label>
               <div class="input__form-emaill">
-              <input class="emaill-input numder-input" type="text" placeholder="Введите телефон">
+              <input class="emaill-input numder-input" type="tel" placeholder="Введите телефон">
                 <img class="button__input-form" src="./img/phone-form.svg" width="58" height="58" alt="Телефон.">
               </div>
             </li>
             <li class="emaill-number__form number__form">
               <label class="form__information-emaill">Электронная почта*:</label>
               <div class="input__form-emaill">
-                <input class="emaill-input" type="text" placeholder="Введите e-maill">
+                <input class="emaill-input" type="email" placeholder="Введите e-maill">
                 <img class="button__input-form" src="./img/emal-form.svg" width="58" height="58" alt="e-maill.">
               </div>
             </li>
           </ul>
         </div>
+      </div>
 
         <!--Your impression-->
         <div class="impression__form">
           <h3 class="your-impression__form">Ваше общее впечатление:</h3>
           <ul class="impression-feeling__form">
             <li class="feeling-input__form feeling-input__form--none">
-              <input class="feeling-input" type="radio" name="feeling" checked>
-              <p class="feeling__form">Скорее положительное</p>
+              <label class="feeling__form">
+              <input class="feeling-input" type="radio" name="feeling" checked><span class="feeling__span"></span>Скорее положительное
+            </label>
             </li>
             <li class="feeling-input__form">
-              <input class="feeling-input" type="radio" name="feeling">
-              <p class="feeling__form">Скорее отрицательное</p>
+              <label class="feeling__form">
+              <input class="feeling-input" type="radio" name="feeling"><span class="feeling__span"></span>Скорее отрицательное
+            </label>
             </li>
             <li class="feeling-input__form">
-              <input class="feeling-input" type="radio" name="feeling">
-              <p class="feeling__form">Затрудняюсь ответить</p>
+              <label class="feeling__form">
+              <input class="feeling-input" type="radio" name="feeling"><span class="feeling__span"></span>Затрудняюсь ответить
+            </label>
             </li>
           </ul>
         </div>
@@ -120,22 +128,30 @@
         <!--Visited attractions-->
         <div class="visited-attractions__form">
           <h3 class="visited__attractions">Посещенные достопримечательности:</h3>
-          <ul class="attractions__form">
+          <ul class="attractions__form-list">
             <li class="sedona__attractions sedona__attractions--none">
-              <input class="attractions-input" type="checkbox" name="attractions" checked>
-              <p class="names-attractions">Мост Дьявола</p>
+              <label class="attractions__form">
+                <input class="attractions-input" type="checkbox" name="attractions" checked>
+                <span class="names-attractions"></span>Мост Дьявола
+              </label>
             </li>
             <li class="sedona__attractions">
-              <input class="attractions-input" type="checkbox" name="attractions" checked>
-              <p class="names-attractions">Гора-Колокол</p>
+              <label class="attractions__form">
+                <input class="attractions-input" type="checkbox" name="attractions" checked>
+                <span class="names-attractions"></span>Гора-Колокол
+              </label>
             </li>
             <li class="sedona__attractions">
-              <input class="attractions-input" type="checkbox" name="attractions" checked>
-              <p class="names-attractions">Слайд-парк</p>
+              <label class="attractions__form">
+                <input class="attractions-input" type="checkbox" name="attractions" checked>
+                <span class="names-attractions"></span>Слайд-парк
+              </label>
             </li>
             <li class="sedona__attractions">
-              <input class="attractions-input" type="checkbox" name="attractions">
-              <p class="names-attractions">Красные скалы</p>
+              <label class="attractions__form">
+                <input class="attractions-input" type="checkbox" name="attractions">
+                <span class="names-attractions"></span>Красные скалы
+              </label>
             </li>
           </ul>
         </div>
@@ -143,15 +159,37 @@
         <!--Your-emotion-->
         <div class="your-emotions__form">
           <h3 class="your-emotions">Опишите свои эмоции:</h3>
-          <div class="form__emotions-input">
-            <input class="emotions-input" type="text" placeholder="Опишите подробно все свои восторги">
+          <div class="form__emotions-textarea">
+            <textarea class="emotions-textarea" placeholder="Опишите подробно все свои восторги"></textarea>
           </div>
-          <button class="comment-button button" type="button">Отпривить отзыв</button>
+          <div class="necessarily-comment__box">
+          <button class="comment-button button" type="button">Отправить отзыв</button>
           <p class="necessarily-comment">* — Обязательные поля</p>
+          </div>
         </div>
       </div>
+
     </section>
   </main>
+
+  <div class="popup">
+    <div class="popup__container">
+    <h3 class="popup__form">Что-то пошло не так!</h3>
+    <p class="popup__form-text">Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить</p>
+
+    <button class="button__popup" type="button">Ок</button>
+    </div>
+  </div>
+
+  <div class="popup__review">
+    <div class="popup__container-review">
+    <h3 class="popup__review-your">Ваш отзыв отправлен!</h3>
+    <p class="popup__review-text">Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.</p>
+
+    <button class="button__popup-review" type="button">Закрыть окно</button>
+    </div>
+
+  </div>
 
   <!--Footer-->
   <footer class="footer footer__form">
@@ -191,8 +229,11 @@
       <!--Разработано в HTML Academy-->
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src=".//img/htmlacademy.svg"
-            width="27" height="34" alt="HTML Academy."></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="footer__html" width="27" height="34" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"/>
+          </svg>
+          </a>
       </div>
     </div>
   </footer>

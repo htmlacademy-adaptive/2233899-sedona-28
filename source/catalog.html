@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML Academy: Седона</title>
+  <link rel="icon" href="./img/32.svg">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 
@@ -15,22 +16,24 @@
     </a>
     <!--Навигация-->
     <nav class="nav">
-      <button class="nav__toggle-open" type="button">
-        <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть меню</span></button>
-        <button class="nav__toggle" type="button">
-          <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть меню</span></button>
+      <button class="nav__toggle-on" type="button">
+        <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть
+          меню</span></button>
+      <button class="nav__toggle" type="button">
+        <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть
+          меню</span></button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
           <li class="site-list__item site-list__item--active">
             <a class="nav__link" href="index.html">Главная</a>
           </li>
-          <li class="site-list__item">
-            <a class="nav__link" href="catalog.html">Фото и видео</a>
+          <li class="site-list__item site-list__item-second">
+            <a class="nav__link nav__link--active" href="catalog.html">Фото и видео</a>
           </li>
           <li class="site-list__item">
             <a class="nav__link" href="form.html">Форма отзыва</a>
           </li>
-          <li class="site-list__item">
+          <li class="site-list__item site-list__item-html">
             <a class="nav__link" href="https://htmlacademy.ru/intensive/adaptive">HTML academy</a>
           </li>
         </ul>
@@ -42,7 +45,7 @@
   <main class="main__catalog">
     <div class="hero-catalog">
       <h1 class="visually-hidden">Добро пожаловать в седону</h1>
-      <img class="hero__text-catalog" src="./img/sedona-catalog.png" width="229" height="39" alt="Каньен в седоне.">
+      <img class="hero__text-catalog" src="./img/sedona.svg" width="229" height="39" alt="Каньен в седоне.">
       </div>
     <section class="stats__catalog">
       <div class="stats__wrapper-catalog">
@@ -53,44 +56,63 @@
         </div>
 
         <!--Фото-->
+      <div class="advantages__catalog-wrapper">
         <ul class="advantages__catalog-main">
-          <li class="advantages__catalog">
-            <img class="catalog__photo" src="./img/photo-catalog-1.png" width="280" height="280" alt="Дорога.">
+          <li class="advantages__catalog advantages__catalog--full-width">
+            <img class="catalog__photo catalog__photo-first" src="./img/photo-catalog-1.png" width="280" height="280" alt="Дорога.">
+            <div class="advantages__container">
             <h3 class="advantages__photo-description">Неродные просторы</h3>
             <p class="advantages__photographer">Автор фото: Борис</p>
             <button type="button" class="button advantages__catalog-like">
-              <img src="./img/like.svg" width="23" height="21" alt="like">
+              <svg class="button__catalog-like" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <sup class="catalog__like">1350</sup>
             </button>
-            <sup class="catalog__like">1350</sup>
+            </div>
           </li>
           <li class="advantages__catalog">
             <img class="catalog__photo" src="./img/photo-catalog-2.png" width="280" height="280" alt="Красивое ростение.">
+            <div class="advantages__container">
             <h3 class="advantages__photo-description">Местная растительность</h3>
             <p class="advantages__photographer">Автор фото: Сергей</p>
             <button type="button" class="button advantages__catalog-like">
-              <img src="./img/like.svg" width="23" height="21" alt="like">
+              <svg class="button__catalog-like" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <sup class="catalog__like">143</sup>
             </button>
-            <sup class="catalog__like">143</sup>
+            </div>
           </li>
           <li class="advantages__catalog">
             <img class="catalog__photo" src="./img/photo-catalog-3.png" width="280" height="280" alt="Дорога через лес и горы.">
+            <div class="advantages__container">
             <h3 class="advantages__photo-description">Дорога на север</h3>
             <p class="advantages__photographer">Автор фото: Петр</p>
             <button type="button" class="button advantages__catalog-like">
-              <img src="./img/like.svg" width="23" height="21" alt="like">
+              <svg class="button__catalog-like" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <sup class="catalog__like">96</sup>
             </button>
-            <sup class="catalog__like">96</sup>
+            </div>
           </li>
           <li class="advantages__catalog">
             <img class="catalog__photo" src="./img/photo-catalog-4.png" width="280" height="280" alt="Каньен.">
+            <div class="advantages__container">
             <h3 class="advantages__photo-description">Мост дьявола</h3>
             <p class="advantages__photographer">Автор фото: Антон</p>
             <button type="button" class="button advantages__catalog-like">
-              <img src="./img/like.svg" width="23" height="21" alt="like">
+              <svg class="button__catalog-like" width="23" height="21" viewBox="0 0 23 21" xmlns="http://www.w3.org/2000/svg">
+                <path opacity="0.3" d="M12.9636 3.78L12.3364 6.825L11.7091 9.45H14.3227H20.8045V11.55C20.8045 11.55 20.8045 11.55 20.8045 11.655L17.7727 18.9H8.36364V8.4L12.9636 3.78ZM2.09091 10.5V18.9V10.5ZM13.8 0L6.9 6.93C6.48182 7.245 6.27273 7.77 6.27273 8.4V18.9C6.27273 20.055 7.21364 21 8.36364 21H17.7727C18.6091 21 19.3409 20.475 19.6545 19.74L22.7909 12.285C22.8955 12.075 22.8955 11.76 22.8955 11.55V9.45H23C23 8.295 22.0591 7.35 20.9091 7.35H14.3227L15.3682 2.52V2.205C15.3682 1.785 15.1591 1.365 14.95 1.05L13.8 0ZM4.18182 8.4H0V21H4.18182V8.4Z"/>
+              </svg>
+              <sup class="catalog__like">254</sup>
             </button>
-            <sup class="catalog__like">254</sup>
+            </div>
           </li>
+
         </ul>
+      </div>
 
         <div class="page__container-presentation">
           <h2 class="main__catalog-presentation">Все еще сомневаетесь?</h2>
@@ -100,7 +122,8 @@
         </div>
 
         <div class="video__catalog">
-          <img class="button__video" width="280" height="177" src="./img/video-catalog.png" alt="Видео.">
+          <img class="button__img" width="280" height="177" src="./img/video-catalog.png" alt="Видео.">
+          <button class="button button__video-start"></button>
         </div>
 
       </div>
@@ -146,8 +169,11 @@
       <!--Разработано в HTML Academy-->
       <div class="footer__copyright copyright">
         <b class="copyright__text">Разработано:</b>
-        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src=".//img/htmlacademy.svg"
-            width="27" height="34" alt="HTML Academy."></a>
+        <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+          <svg class="footer__html" width="27" height="34" viewBox="0 0 27 35" xmlns="http://www.w3.org/2000/svg">
+            <path d="M13.65 0.449951H13.55L0.0500031 1.84995V26.55L13.55 34.5499L26.95 26.55V1.84995L13.65 0.449951ZM25.05 12.55L13.55 5.74995V5.64995H13.45L13.35 5.54995V5.64995L1.95 12.55V3.54995L13.45 2.34995L25.05 3.54995V12.55ZM13.45 7.24995L24.95 13.95L20.45 16.55L13.35 12.35V13.75L19.25 17.25L18.35 17.75L13.35 14.75V16.15L17.15 18.45L16.35 18.95L13.35 17.15V18.55L15.25 19.65L13.45 20.75L2.05 14.05L13.45 7.24995ZM1.95 15.55L13.35 22.35V23.35L5.45 18.65V20.05L13.45 24.85V25.95L5.45 21.25V22.65L13.45 27.45L21.55 22.55V17.35L24.95 15.35V25.35L13.45 32.25L1.95 25.45V15.55Z"/>
+          </svg>
+          </a>
       </div>
     </div>
   </footer>

@@ -1,0 +1,126 @@
+@use "../setup/mixins.scss" as m;
+
+// CATALOG
+.advantages__catalog-wrapper {
+  @include m.tablet {
+    padding: 0 60px;
+  }
+
+  @include m.desktop {
+    padding: 0;
+  }
+}
+
+.advantages__catalog-main {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: 50% 50%;
+  }
+
+  @include m.desktop {
+    grid-template-columns: repeat(3, 400px);
+  }
+}
+
+.advantages__catalog {
+  text-align: left;
+  padding-left: 20px;
+  list-style-type: none;
+
+  @include m.tablet {
+    padding: 0;
+    display: grid;
+  }
+
+  @include m.desktop {
+    position: relative;
+  }
+}
+
+.advantages__catalog::after {
+  content: "";
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+
+  @include m.tablet {
+    display: none;
+  }
+}
+
+.advantages__catalog--full-width {
+  @include m.tablet {
+    grid-column: 1 /-1;
+  }
+}
+
+.advantages__container {
+  padding-top: 15px;
+
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 1fr));
+    grid-template-rows: min-content;
+    width: 100%;
+    align-items: center;
+    padding: 0;
+    padding-left: 20px;
+    padding-right: 27px;
+    row-gap: 8px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+  }
+
+  @include m.desktop {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    color: #000000;
+    height: 80px;
+    width: 100%;
+    box-sizing: border-box;
+    row-gap: 0;
+  }
+}
+
+.advantages__photo-description {
+  margin: 0;
+  padding-bottom: 5px;
+
+  @include m.tablet {
+    padding-top: 22px;
+    grid-column: 1/2;
+    margin: 0;
+    white-space: nowrap;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  @include m.desktop {
+    padding-top: 20px;
+    color: #ffffff;
+  }
+}
+
+.advantages__photographer {
+  text-transform: none;
+  margin: 0;
+  padding-bottom: 10px;
+
+  @include m.tablet {
+    padding-bottom: 15px;
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+    margin: 0;
+  }
+
+  @include m.desktop {
+    color: #ffffff;
+  }
+}

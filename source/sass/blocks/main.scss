@@ -1,27 +1,73 @@
+@use "../setup/mixins.scss" as m;
+@use "./main-catalog.scss";
+@use "./main-form.scss";
 
 // КАРТА
 .sedona__map {
   margin-top: 49px;
   border: none;
+
+  @include m.tablet {
+    margin-top: 55px;
+  }
 }
 
 .hero {
   height: 389px;
   background-image: url("../img/hero.png");
+
+  @include m.tablet {
+    height: 518px;
+  }
+}
+
+.hero::after {
+  content: "";
+  margin-top: 24px;
+  display: block;
+  width: 100%;
+  height: 57px;
+  background-image: url("../img/sedona-after.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+
+  @include m.tablet {
+    content: "";
+    margin-top: 17px;
+    display: block;
+    width: 100%;
+    height: 57px;
+    background-image: url("../img/sedona-after.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
 }
 
 .hero__text {
   padding-top: 90px;
+
+  @include m.tablet {
+    width: 461px;
+    height: 350px;
+  }
 }
 
 .main__head {
+  display: inline-block;
   padding-top: 32px;
+  width: 270px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   color: #000000;
   margin-bottom: 35px;
   margin-top: 0;
+
+  @include m.tablet {
+    font-size: 21px;
+    line-height: 26px;
+    min-width: 520px;
+  }
 }
 
 .main__text {
@@ -32,337 +78,65 @@
   margin: 0;
 }
 
+.page__container {
+  position: relative;
+}
+
+.page__container::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 37px;
+  fill: #000000;
+  background-image: url("../img/after-index.svg");
+
+  @include m.tablet {
+    display: none;
+  }
+}
+
 // Заинтерисовались?
-.interested__head {
+.interested {
   padding-top: 38px;
+
+  @include m.tablet {
+    padding-top: 60px;
+  }
+}
+
+.interested__head {
   font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   margin: 0;
+  padding: 0;
+
+  @include m.tablet {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @include m.desktop {
+    font-size: 30px;
+    line-height: 30px;
+  }
 }
 
 .interested__text {
   margin: 32px 0;
+  padding: 0 29px;
   color: #333333;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
-}
 
-// CATALOG
+  @include m.tablet {
+    padding: 0 160px;
+    margin-bottom: 44px;
+  }
 
-.hero-catalog {
-  height: 101px;
-  background-image: url("../img/hero.png");
-}
-
-.hero__text-catalog {
-  padding-top: 52px;
-}
-
-.main__catalog-photo {
-  margin: 0;
-  padding: 30px 0;
-  padding-top: 20px;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-
-.main__catalog-photo-text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 26px;
-}
-
-.page__container-catalog {
-  padding-top: 37px;
-}
-
-.video__catalog {
-  height: 177px;
-  width: 100%;
-  background-image: url("./img/poligon-1");
-}
-
-.main__catalog-presentation {
-  padding-top: 43px;
-  margin: 0;
-}
-
-.main__catalog-presentation-text {
-  padding-top: 35px;
-  padding-bottom: 35px;
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-}
-
-.catalog__photo {
-  padding-top: 50px;
-}
-
-// FORM
-
-.page-container__form {
-  margin-top: 36px;
-}
-
-.main-review__form {
-  margin: 0;
-  margin-bottom: 24px;
-}
-
-.main-review-text__form {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  margin: 0;
-  margin-bottom: 53px;
-}
-
-// FORM NAME
-
-.full-name__form-data {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-}
-
-.form__name {
-  display: flex;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  width: 220px;
-  background: fixed;
-  border: none;
-  padding: 16px;
-}
-
-.form__name-editor {
-  background-color: #f2f2f2;
-  width: 280px;
-  min-height: 58px;
-  margin-left: 20px;
-}
-
-.full-name__form {
-  margin: 0;
-  margin-bottom: 20px;
-}
-
-.first-name__form {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  display: flex;
-  padding-left: 36px;
-  color: #333333;
-  margin: 0;
-}
-
-.full-name__form-passport {
-  display: table;
-}
-
-.full-name__top-distance {
-  padding-top: 16px;
-}
-
-// FORM CONTACT INFORMATION
-
-.contact-informatiom__form {
-  margin: 0;
-  margin-top: 64px;
-}
-
-.contact-emaill-number__form {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.emaill-number__form {
-  margin-top: 20px;
-}
-
-.number__form {
-  margin-top: 16px;
-}
-
-.form__information-number {
-  margin-left: 36px;
-  color: #333333;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  display: flex;
-}
-
-.form__information-emaill {
-  margin-left: 36px;
-  color: #333333;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  display: flex;
-}
-
-.input__form-emaill {
-  position: relative;
-  justify-content: center;
-  display: flex;
-  margin: 0 78px 0 20px;
-  height: 58px;
-  width: 222px;
-  background-color: #f2f2f2;
-}
-
-.emaill-input {
-  padding: 0 8px 0 7px;
-  height: 58px;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-  background: fixed;
-  border: none;
-  position: absolute;
-}
-
-.button__input-form {
-  cursor: pointer;
-  height: 58px;
-  right: -58px;
-  position: absolute;
-  padding: 0;
-  border: none;
-}
-
-
-// FORM YOUR IMPRESSION
-
-.your-impression__form {
-  margin: 0;
-  margin-top: 59px;
-}
-
-.impression-feeling__form {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 30px;
-}
-
-.feeling-input__form {
-  align-items: center;
-  display: flex;
-  margin-top: 36px;
-}
-
-.feeling-input__form--none {
-  margin-top: 0;
-}
-
-.feeling-input {
-  border: 15px solid #f2f2f2;
-  width: 16px;
-  height: 16px;
-  content: "";
-  margin: 0;
-  margin-left: 20px;
-}
-
-.feeling__form {
-  text-transform: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  margin-left: 16px;
-}
-
-.feeling__form--none {
-  margin-top: 0;
-}
-
-// FORM VISITE ATTRACTIONS
-
-.visited__attractions {
-  margin: 0;
-  margin-top: 59px;
-}
-
-.attractions__form {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-  margin-top: 20px;
-}
-
-.sedona__attractions {
-  display: flex;
-  margin: 0 20px;
-  margin-top: 16px;
-}
-
-.sedona__attractions--none {
-  margin-top: 0;
-}
-
-.attractions-input {
-  margin: 0;
-}
-
-.names-attractions {
-  text-transform: none;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  margin: 0;
-  margin-left: 16px;
-}
-
-// FORM  EMOTION
-
-.your-emotions {
-  margin: 0;
-  margin-top: 59px;
-}
-
-.emotions-input {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  color: rgba(0, 0, 0, 0.3);
-  margin-top: 20px;
-  background-color: #f2f2f2;
-  width: 247px;
-  height: 150px;
-  padding: 0 17px 0 16px;
-  border: none;
-}
-
-.comment-button {
-  margin-top: 56px;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-  padding: 16px 49px;
-  color: #ffffff;
-  background-color: #81b3d2;
-  cursor: pointer;
-}
-
-.necessarily-comment {
-  display: flex;
-  justify-content: end;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 21px;
-  color: rgba(51, 51, 51, 0.6);
-  margin: 3px 20px 0 0;
+  @include m.desktop {
+    padding: 0 379px;
+  }
 }
