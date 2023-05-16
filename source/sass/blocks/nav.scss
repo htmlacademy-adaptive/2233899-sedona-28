@@ -2,12 +2,17 @@
 
 .nav {
   color: #ffffff;
+  width: 100%;
 
   @include m.tablet {
     max-height: 56px;
     color: #000000;
     background-color: #ffffff;
   }
+}
+
+.nav--opened.nav__wrapper {
+  display: block;
 }
 
 .nav__toggle {
@@ -25,6 +30,10 @@
   }
 }
 
+.nav--opened.nav__toggle {
+  display: block;
+}
+
 .nav__toggle-on {
   display: flex;
   position: absolute;
@@ -34,10 +43,15 @@
   background-color: #ffffff;
   cursor: pointer;
   padding: 0;
+  z-index: 3;
 
   @include m.tablet {
     display: none;
   }
+}
+
+.nav--opened.nav__toggle-on {
+  display: none;
 }
 
 .nav__wrapper {
