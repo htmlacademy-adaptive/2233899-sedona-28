@@ -10,6 +10,10 @@
   }
 }
 
+.nav--opened.nav__toggle-on {
+  display: none;
+}
+
 .nav__toggle {
   padding: 0;
   top: 17px;
