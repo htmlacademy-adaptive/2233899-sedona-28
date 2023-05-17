@@ -11,10 +11,6 @@
   }
 }
 
-.nav--opened.nav__wrapper {
-  display: block;
-}
-
 .nav__toggle {
   padding: 0;
   top: 17px;
@@ -28,10 +24,6 @@
   @include m.tablet {
     display: none;
   }
-}
-
-.nav--opened.nav__toggle {
-  display: block;
 }
 
 .nav__toggle-on {
@@ -48,10 +40,6 @@
   @include m.tablet {
     display: none;
   }
-}
-
-.nav--opened.nav__toggle-on {
-  display: none;
 }
 
 .nav__wrapper {
