@@ -2,6 +2,7 @@
 
 .nav {
   color: #ffffff;
+  width: 100%;
 
   @include m.tablet {
     max-height: 56px;
@@ -34,6 +35,7 @@
   background-color: #ffffff;
   cursor: pointer;
   padding: 0;
+  z-index: 3;
 
   @include m.tablet {
     display: none;
