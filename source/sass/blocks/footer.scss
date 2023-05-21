@@ -61,15 +61,20 @@
   list-style-type: none;
 }
 
-.footer__copyright {
-  display: flex;
-  justify-content: center;
-  height: 35px;
-  align-items: center;
+.footer__copyright:hover {
+  color: #81b3d2;
 }
 
 .footer__form {
   margin-top: 22px;
+}
+
+.copyright__link {
+  display: flex;
+  justify-content: center;
+  height: 35px;
+  align-items: center;
+  list-style-type: none;
 }
 
 // Иконки
@@ -83,9 +88,14 @@
   color: #000000;
 }
 
+.footer__html:hover {
+  fill: #81b3d2;
+}
+
 .copyright__text {
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
   padding-right: 12px;
+  list-style-type: none;
 }
