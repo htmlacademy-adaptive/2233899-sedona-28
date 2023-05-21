@@ -70,13 +70,33 @@
 }
 
 .copyright__link {
+  width: 130px;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   height: 35px;
   align-items: center;
   list-style-type: none;
+  text-decoration: none;
+  color: #000000;
 }
 
+.copyright__link:hover.copyright__text.footer__html {
+  color: #81b3d2;
+  fill: #81b3d2;
+}
+
+.copyright__text {
+  margin: 0;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  padding: 0;
+  list-style-type: none;
+}
+
+.copyright__text:hover {
+  color: #81b3d2;
+}
 // Иконки
 
 .footer__connection {
@@ -85,17 +105,10 @@
 }
 
 .footer__html {
-  color: #000000;
+  fill: #000000;
 }
 
 .footer__html:hover {
   fill: #81b3d2;
 }
 
-.copyright__text {
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  padding-right: 12px;
-  list-style-type: none;
-}

@@ -1,0 +1,52 @@
+@use "../setup/mixins.scss" as m;
+
+.nav__list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @include m.tablet {
+    grid-template-columns: repeat(5, 1fr);
+    display: grid;
+    width: 768px;
+    grid-auto-flow: column;
+  }
+
+  @include m.desktop {
+    width: 1200px;
+  }
+}
+
+.nav__link {
+  padding: 17px 0 12px;
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  text-transform: uppercase;
+
+  @include m.tablet {
+    max-height: 21px;
+    padding: 18px 0 17px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 21px;
+    color: #000000;
+    white-space: nowrap;
+  }
+}
+
+.nav__link--active {
+  @include m.tablet {
+    color: #766357;
+  }
+}
+
+.nav__list::after {
+  @include m.tablet {
+    content: "";
+    grid-column: 3/4;
+    width: 100%;
+  }
+}

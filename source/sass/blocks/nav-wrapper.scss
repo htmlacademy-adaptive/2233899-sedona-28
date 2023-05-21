@@ -1,0 +1,13 @@
+@use "../setup/mixins.scss" as m;
+
+.nav__wrapper {
+  background-color: #81b3d2;
+  width: 100%;
+  position: absolute;
+  display: none; //ON-OFF
+
+  @include m.tablet {
+    display: flex;
+    background-color: transparent;
+  }
+}
