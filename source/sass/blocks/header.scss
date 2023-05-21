@@ -2,7 +2,7 @@
 
 .header {
   width: 320px;
-  height: 56px;
+  min-height: 56px;
   background-color: #ffffff;
   position: relative;
   display: flex;
@@ -29,14 +29,13 @@
 }
 
 .header__logo-on {
-  // padding: 0 67px;
+  z-index: 1;
   display: flex;
   align-items: center;
 
   @include m.tablet {
     display: block;
     padding: 0;
-    // left: 292px;
   }
 }
 

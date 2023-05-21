@@ -10,17 +10,17 @@
 </head>
 
 <body class="page__body">
-  <header class="header">
+  <header class="header nojs">
     <a class="header__logo header__logo-on">
-      <img src="img/logo.png" width="185" height="96" alt="Логотип Sedona.">
+      <img src="img/logo.svg" width="185" height="96" alt="Логотип Sedona.">
     </a>
     <!--Навигация-->
     <nav class="nav">
-      <button class="nav__toggle-on" type="button">
-          <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть
+      <button class="nav__toggle-open" type="button">
+        <img class="button__open" src="img/button-menu.svg" alt="Кнока открыть."><span class="visually-hidden">Открыть
           меню</span></button>
-      <button class="nav__toggle" type="button">
-          <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть
+      <button class="nav__toggle-close hidden" type="button">
+        <img class="button__close" src="img/button-close.svg" alt="Кнока закрыть."><span class="visually-hidden">Закрыть
           меню</span></button>
       <div class="nav__wrapper">
         <ul class="nav__list site-list">
@@ -237,6 +237,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="./js/script.js"></script>
 </body>
 
 </html>

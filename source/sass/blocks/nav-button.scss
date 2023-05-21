@@ -1,0 +1,33 @@
+@use "../setup/mixins.scss" as m;
+
+
+.nav__toggle-close {
+  padding: 0;
+  top: 17px;
+  right: 20px;
+  position: absolute;
+  border: none;
+  background: fixed;
+  cursor: pointer;
+  z-index: 2;
+
+  @include m.tablet {
+    display: none;
+  }
+}
+
+.nav__toggle-open {
+  display: flex;
+  position: absolute;
+  top: 17px;
+  right: 20px;
+  border: none;
+  background-color: #ffffff;
+  cursor: pointer;
+  z-index: 0;
+  padding: 0;
+
+  @include m.tablet {
+    display: none;
+  }
+}

@@ -1,8 +1,11 @@
 @use "../setup/mixins.scss" as m;
 
 .nav {
+  position: relative;
   color: #ffffff;
   width: 100%;
+  text-align: center;
+  z-index: 1;
 
   @include m.tablet {
     max-height: 56px;
@@ -11,128 +14,28 @@
   }
 }
 
-.nav__toggle {
-  padding: 0;
-  top: 17px;
-  right: 17px;
-  position: absolute;
-  border: none;
-  background: fixed;
-  cursor: pointer;
+.hidden {
   display: none;
+}
 
-  @include m.tablet {
+.nav--opened {
+  & .nav__wrapper {
+    display: block;
+  }
+}
+
+.nojs {
+  & .nav__wrapper {
+    display: block;
+    position: static;
+  }
+
+  & .header__logo {
     display: none;
   }
-}
 
-.nav__toggle-on {
-  display: flex;
-  position: absolute;
-  top: 17px;
-  right: 17px;
-  border: none;
-  background-color: #ffffff;
-  cursor: pointer;
-  padding: 0;
-  z-index: 3;
-
-  @include m.tablet {
+  & .nav__toggle,
+  & .nav__toggle-open {
     display: none;
-  }
-}
-
-.nav__wrapper {
-  background-color: #81b3d2;
-  // width: 320px;
-  display: none; //ON-OFF
-
-  @include m.tablet {
-    display: flex;
-    background-color: transparent;
-  }
-}
-
-.nav__list {
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-
-  @include m.tablet {
-    grid-template-columns: repeat(5, 1fr);
-    display: grid;
-    width: 768px;
-    grid-auto-flow: column;
-  }
-
-  @include m.desktop {
-    width: 1200px;
-  }
-}
-
-.nav__list::after {
-  @include m.tablet {
-    content: "";
-    grid-column: 3/4;
-    width: 100%;
-  }
-}
-
-.nav__link {
-  padding: 17px 0 12px;
-  text-decoration: none;
-  color: #ffffff;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 26px;
-  text-transform: uppercase;
-
-  @include m.tablet {
-    max-height: 21px;
-    padding: 18px 0 17px;
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 21px;
-    color: #000000;
-    white-space: nowrap;
-  }
-}
-
-.nav__link--active {
-  @include m.tablet {
-    color: #766357;
-  }
-}
-
-.site-list__item {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  min-height: 56px;
-  box-shadow: 0 1px 0 rgba(1, 1, 1, 0.2), inset 0 1px 0 rgba(255, 255, 255, 0.2);
-
-  @include m.tablet {
-    // display: flex;
-    box-shadow: none;
-    // margin-right: 52px;
-  }
-}
-
-.site-list__item--active {
-  @include m.tablet {
-    // padding: 0 75px 0 50px;
-    margin: 0;
-  }
-}
-
-.site-list__item-second {
-  @include m.tablet {
-    // margin-right: 205px;
-  }
-}
-
-.site-list__item-html {
-  @include m.tablet {
-    padding: 0;
   }
 }

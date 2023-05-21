@@ -7,7 +7,13 @@
 // index
 // Шапка
 @use "./blocks/header.scss";
+// nav
 @use "./blocks/nav.scss";
+@use "./blocks/nav-button.scss";
+@use "./blocks/nav-wrapper.scss";
+@use "./blocks/nav-site-list.scss";
+@use "./blocks/nav-list__link.scss";
+
 
 // Main
 @use "./blocks/main.scss";
