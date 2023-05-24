@@ -89,7 +89,7 @@
 
 .necessarily-comment {
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   font-weight: 400;
   font-size: 12px;
   line-height: 21px;
@@ -99,7 +99,7 @@
   margin-top: 3px;
 
   @include m.tablet {
-    align-items: end;
+    align-items: flex-end;
     color: #333333;
     font-size: 14px;
     line-height: 21px;
