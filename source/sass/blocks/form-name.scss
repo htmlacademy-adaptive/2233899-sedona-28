@@ -1,0 +1,100 @@
+@use "../setup/mixins.scss" as m;
+
+.form__construction {
+  @include m.tablet {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+  }
+
+  @include m.desktop {
+    grid-gap: 100px;
+    padding: 0 120px;
+  }
+}
+
+// NAME
+
+.full-mane-introduce__form {
+  @include m.tablet {
+    display: grid;
+  }
+
+  @include m.desktop {
+    width: 430px;
+  }
+}
+
+.full-name__form-data {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+  @include m.tablet {
+    margin-top: 28px;
+  }
+}
+
+.form__name {
+  display: flex;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  width: 280px;
+  min-height: 58px;
+  background-color: #f2f2f2;
+  border: none;
+  padding: 16px;
+  box-sizing: border-box;
+
+  @include m.tablet {
+    width: 295px;
+  }
+
+  @include m.desktop {
+    width: 430px;
+  }
+}
+
+.form__name-editor {
+  margin-left: 20px;
+
+  @include m.tablet {
+    margin: 0;
+  }
+}
+
+.full-name__form {
+  margin: 0;
+  margin-bottom: 20px;
+
+  @include m.tablet {
+    margin: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.first-name__form {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+  padding-left: 36px;
+  color: #333333;
+  margin: 0;
+
+  @include m.tablet {
+    padding: 0;
+    padding-left: 16px;
+  }
+}
+
+.full-name__form-passport {
+  display: block;
+}
+
+.full-name__one-distance {
+  padding-top: 16px;
+}

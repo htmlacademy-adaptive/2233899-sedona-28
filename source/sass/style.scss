@@ -5,7 +5,6 @@
 @use "./base/page.scss";
 
 // index
-// Шапка
 @use "./blocks/header.scss";
 // nav
 @use "./blocks/nav.scss";
@@ -14,14 +13,50 @@
 @use "./blocks/nav-site-list.scss";
 @use "./blocks/nav-list__link.scss";
 
-
 // Main
 @use "./blocks/main.scss";
+@use "./blocks/main-page-container.scss";
+@use "./blocks/main-interested.scss";
 // Настоящий городок
 @use "./blocks/advantages.scss";
-
-// Кнопки
-@use "./blocks/button.scss";
+@use "./blocks/advantages-after.scss";
+@use "./blocks/advantages-item.scss";
+@use "./blocks/advantages__description.scss";
+@use "./blocks/advantages__eat.scss";
 
 //Footer
 @use "./blocks/footer.scss";
+@use "./blocks/footer-hash.scss";
+@use "./blocks/footer-social.scss";
+@use "./blocks/footer-html.scss";
+
+// Кнопки
+@use "./blocks/button.scss";
+@use "./blocks/button-catalog.scss";
+@use "./blocks/button-popup.scss";
+
+
+// CATALOG
+
+// Main
+@use "./blocks/main-catalog.scss";
+@use "./blocks/catalog-li-element.scss";
+@use "./blocks/catalog-advantages__container.scss";
+@use "./blocks/page-container-catalog.scss";
+@use "./blocks/page__container-presentation.scss";
+@use "./blocks/main-catalog-video.scss";
+@use "./blocks/catalog__photo.scss";
+
+// ADVANTAGES
+@use "./blocks/advantages-catalog.scss";
+// FORM
+
+// Main
+@use "./blocks/main-form.scss";
+@use "./blocks/page-container-form.scss";
+@use "./blocks/form-name.scss";
+@use "./blocks/form-number.scss";
+@use "./blocks/form-impression.scss";
+@use "./blocks/form-attractions.scss";
+@use "./blocks/form-emotion.scss";
+@use "./blocks/form-popup.scss";

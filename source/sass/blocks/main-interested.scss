@@ -1,0 +1,45 @@
+@use "../setup/mixins.scss" as m;
+
+.interested {
+  padding-top: 38px;
+
+  @include m.tablet {
+    padding-top: 60px;
+  }
+}
+
+.interested__head {
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0;
+
+  @include m.tablet {
+    font-size: 30px;
+    line-height: 26px;
+  }
+
+  @include m.desktop {
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
+.interested__text {
+  margin: 32px 0;
+  padding: 0 29px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+
+  @include m.tablet {
+    padding: 0 160px;
+    margin-bottom: 44px;
+  }
+
+  @include m.desktop {
+    padding: 0 379px;
+  }
+}

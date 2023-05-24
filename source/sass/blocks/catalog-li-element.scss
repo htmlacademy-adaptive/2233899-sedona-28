@@ -1,0 +1,35 @@
+@use "../setup/mixins.scss" as m;
+
+.advantages__catalog {
+  text-align: left;
+  padding-left: 20px;
+  list-style-type: none;
+
+  @include m.tablet {
+    padding: 0;
+    display: grid;
+  }
+
+  @include m.desktop {
+    position: relative;
+  }
+}
+
+.advantages__catalog::after {
+  content: "";
+  display: block;
+  margin-top: 25px;
+  width: 100%;
+  height: 1px;
+  background: #e5e5e5;
+
+  @include m.tablet {
+    display: none;
+  }
+}
+
+.advantages__catalog--full-width {
+  @include m.tablet {
+    grid-column: 1 /-1;
+  }
+}
