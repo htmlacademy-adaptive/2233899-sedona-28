@@ -1,0 +1,108 @@
+@use "../setup/mixins.scss" as m;
+
+.your-emotions__form {
+  margin: 0;
+  margin-top: 49px;
+
+  @include m.tablet {
+    margin-top: 42px;
+  }
+
+  @include m.desktop {
+    margin-top: 87px;
+  }
+}
+
+.your-emotions {
+  margin: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+.form__emotions-textarea {
+  margin-top: 20px;
+
+  @include m.tablet {
+    margin-top: 28px;
+  }
+}
+
+.emotions-textarea {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  width: 280px;
+  min-height: 150px;
+  padding: 16px;
+  border: none;
+  box-sizing: border-box;
+
+  @include m.tablet {
+    min-height: 160px;
+    min-width: 648px;
+  }
+
+  @include m.desktop {
+    min-width: 768px;
+  }
+}
+
+.necessarily-comment__box {
+  margin-top: 56px;
+
+  @include m.tablet {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 60px;
+    margin-top: 48px;
+  }
+
+  @include m.desktop {
+    padding: 0 216px;
+  }
+}
+
+.comment-button {
+  height: 58px;
+  width: 280px;
+  text-transform: uppercase;
+  padding: 0;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+  color: #ffffff;
+  background-color: #81b3d2;
+  cursor: pointer;
+  text-align: center;
+
+  @include m.tablet {
+    width: 324px;
+  }
+
+  @include m.desktop {
+    width: 384px;
+  }
+}
+
+.necessarily-comment {
+  display: flex;
+  justify-content: flex-end;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 21px;
+  color: rgba(51, 51, 51, 0.6);
+  margin: 0;
+  margin-right: 20px;
+  margin-top: 3px;
+
+  @include m.tablet {
+    align-items: flex-end;
+    color: #333333;
+    font-size: 14px;
+    line-height: 21px;
+    margin-right: 0;
+  }
+}

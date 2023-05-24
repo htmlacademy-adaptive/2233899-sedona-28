@@ -1,0 +1,26 @@
+@use "../setup/mixins.scss" as m;
+
+.copyright__link {
+  width: 130px;
+  display: flex;
+  justify-content: space-between;
+  height: 35px;
+  align-items: center;
+  list-style-type: none;
+  text-decoration: none;
+  color: #000000;
+}
+
+// Иконка HTML
+
+.footer__html {
+  fill: #000000;
+}
+
+.footer__html:hover {
+  fill: #81b3d2;
+}
+
+.footer__html:active {
+  fill: #b3b3b3;
+}

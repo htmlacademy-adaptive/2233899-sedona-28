@@ -9,6 +9,11 @@
   }
 }
 
+
+.footer__form {
+  margin-top: 22px;
+}
+
 .footer__wrapper {
   display: grid;
   justify-content: space-evenly;
@@ -18,96 +23,4 @@
     justify-content: space-around;
     align-items: center;
   }
-}
-
-.footer__hash {
-  padding-top: 33px;
-  height: 30px;
-
-  @include m.tablet {
-    padding: 0;
-  }
-}
-
-.footer__hash-text {
-  color: #000000;
-  text-decoration: none;
-  font-weight: 700;
-  font-size: 21px;
-  line-height: 26px;
-}
-
-// Связь
-
-.social {
-  max-height: 50px;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  justify-content: space-between;
-  max-width: 160px;
-}
-
-.social__item {
-  gap: 6px;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.social__link {
-  color: #000000;
-  text-decoration: none;
-  list-style-type: none;
-}
-
-.footer__copyright:hover {
-  color: #81b3d2;
-}
-
-.footer__form {
-  margin-top: 22px;
-}
-
-.copyright__link {
-  width: 130px;
-  display: flex;
-  justify-content: space-between;
-  height: 35px;
-  align-items: center;
-  list-style-type: none;
-  text-decoration: none;
-  color: #000000;
-}
-
-.copyright__link:hover.copyright__text.footer__html {
-  color: #81b3d2;
-  fill: #81b3d2;
-}
-
-.copyright__text {
-  margin: 0;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  padding: 0;
-  list-style-type: none;
-}
-
-.copyright__text:hover {
-  color: #81b3d2;
-}
-// Иконки
-
-.footer__connection {
-  fill: #ffffff;
-  padding: 0 3px;
-}
-
-.footer__html {
-  fill: #000000;
-}
-
-.footer__html:hover {
-  fill: #81b3d2;
 }

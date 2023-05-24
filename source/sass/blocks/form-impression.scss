@@ -1,0 +1,107 @@
+@use "../setup/mixins.scss" as m;
+
+.impression__form {
+  margin: 0;
+  margin-top: 59px;
+}
+
+.your-impression__form {
+  @include m.tablet {
+    margin: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.impression-feeling__form {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 30px;
+
+  @include m.tablet {
+    margin-top: 28px;
+    margin-left: 96px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: baseline;
+    gap: 16px;
+  }
+
+  @include m.desktop {
+    justify-content: space-around;
+    margin: 0 120px;
+    margin-top: 45px;
+    gap: 28px;
+  }
+}
+
+.feeling-input__form {
+  align-items: center;
+  display: flex;
+  margin-top: 36px;
+
+  @include m.tablet {
+    margin: 0;
+  }
+}
+
+.feeling-input__form--none {
+  margin-top: 0;
+
+  @include m.tablet {
+    margin-right: 49px;
+  }
+
+  @include m.desktop {
+    margin: 0;
+  }
+}
+
+.feeling-input {
+  position: absolute;
+  margin: 0;
+  appearance: none;
+  // display: none;
+}
+
+.feeling__span {
+  border: 15px solid #f2f2f2;
+  background: #f2f2f2;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  content: "";
+  cursor: pointer;
+  margin: 0 16px 0 20px;
+  white-space: nowrap;
+
+  @include m.tablet {
+    margin: 0;
+    margin-right: 16px;
+  }
+}
+
+.feeling-input:checked ~ .feeling__span {
+  background: #f2f2f2;
+  background-image: url("../img/radio-form.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.feeling__form {
+  display: flex;
+  align-items: center;
+  text-transform: initial;
+  position: relative;
+  margin: 0;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+}
+
+.feeling__form--none {
+  margin-top: 0;
+}

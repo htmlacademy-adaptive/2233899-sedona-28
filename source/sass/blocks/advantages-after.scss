@@ -1,0 +1,56 @@
+@use "../setup/mixins.scss" as m;
+
+.advantages__title--city::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№1-";
+  color: #ffffff;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№2-";
+  color: #ffffff;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title--third::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№3-";
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title--third-second::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№4-";
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.advantages__title--third-third::after {
+  padding-top: 11px;
+  padding-bottom: 17px;
+  content: "-№5-";
+  color: #000000;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+}

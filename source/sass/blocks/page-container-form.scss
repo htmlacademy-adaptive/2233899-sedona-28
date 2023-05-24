@@ -1,0 +1,47 @@
+@use "../setup/mixins.scss" as m;
+
+.stats-wrapper__form {
+  margin-top: 36px;
+
+  @include m.tablet {
+    margin-top: 64px;
+  }
+
+  @include m.desktop {
+    margin-top: 115px;
+  }
+}
+
+.main-review__form {
+  margin: 0;
+  margin-bottom: 24px;
+  font-size: 18px;
+  line-height: 26px;
+
+  @include m.tablet {
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+
+  @include m.desktop {
+    margin-bottom: 31px;
+  }
+}
+
+.main-review-text__form {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  margin: 0;
+  margin-bottom: 53px;
+
+  @include m.tablet {
+    padding: 0 166px;
+    margin-bottom: 108px;
+  }
+
+  @include m.desktop {
+    padding: 0 340px;
+    margin-bottom: 68px;
+  }
+}

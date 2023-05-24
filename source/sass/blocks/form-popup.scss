@@ -1,0 +1,112 @@
+@use "../setup/mixins.scss" as m;
+
+.popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; // ON-OFF
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__container {
+  display: block;
+  top: 116px;
+  position: absolute;
+  width: 320px;
+  min-height: 280px;
+  background-color: #ffffff;
+
+  @include m.tablet {
+    top: 300px;
+    min-width: 400px;
+    min-height: 347px;
+  }
+}
+
+.popup__form {
+  color: #000000;
+  margin: 0;
+  margin-top: 45px;
+  font-weight: 700;
+  font-size: 21px;
+  line-height: 26px;
+
+  @include m.tablet {
+    margin-top: 50px;
+    font-size: 30px;
+    line-height: 40px;
+    padding: 0 80px;
+  }
+}
+
+.popup__form-text {
+  color: #333333;
+  margin: 0;
+  margin-top: 25px;
+  margin-bottom: 28px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  padding: 0 27px;
+
+  @include m.tablet {
+    padding: 0 10px;
+    margin-bottom: 45px;
+  }
+}
+
+// POPUP REVIEW
+
+.popup__review {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  display: none; // ON-OFF
+  align-items: center;
+  justify-content: center;
+}
+
+.popup__container-review {
+  display: block;
+  top: 402px;
+  position: absolute;
+  width: 320px;
+  min-height: 320px;
+  background-color: #ffffff;
+
+  @include m.tablet {
+    top: 180px;
+    min-width: 640px;
+    min-height: 347px;
+  }
+}
+
+.popup__review-your {
+  margin: 0;
+  margin-bottom: 30px;
+  margin-top: 40px;
+
+  @include m.tablet {
+    font-size: 30px;
+    line-height: 26px;
+  }
+}
+
+.popup__review-text {
+  margin: 0;
+  margin-bottom: 60px;
+  padding: 0 38px;
+
+  @include m.tablet {
+    font-size: 14px;
+    line-height: 26px;
+    padding: 0 110px;
+  }
+}

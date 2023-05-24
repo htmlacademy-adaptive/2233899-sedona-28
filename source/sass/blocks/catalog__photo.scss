@@ -1,0 +1,24 @@
+@use "../setup/mixins.scss" as m;
+
+.catalog__photo {
+  padding-top: 24px;
+
+  @include m.tablet {
+    padding: 0;
+    object-fit: cover;
+    width: 100%;
+  }
+}
+
+.catalog__photo-first {
+  padding: 0;
+  padding-top: 24px;
+
+  @include m.tablet {
+    padding: 0;
+  }
+
+  @include m.desktop {
+    height: 400px;
+  }
+}

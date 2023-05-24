@@ -1,0 +1,112 @@
+@use "../setup/mixins.scss" as m;
+
+.information__form {
+  @include m.desktop {
+    width: 430px;
+  }
+}
+
+
+.contact-informatiom__form {
+  margin: 0;
+  margin-top: 64px;
+
+  @include m.tablet {
+    margin: 0;
+    font-weight: 700;
+    font-size: 21px;
+    line-height: 26px;
+  }
+}
+
+.contact-emaill-number__form {
+  list-style-type: none;
+  margin: 0;
+  margin-top: 20px;
+  padding: 0;
+
+  @include m.tablet {
+    margin-top: 28px;
+  }
+}
+
+.number__form {
+  margin-top: 16px;
+}
+
+.form__information-number {
+  margin-left: 36px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+
+  @include m.tablet {
+    margin-left: 16px;
+  }
+}
+
+.form__information-emaill {
+  margin-left: 36px;
+  color: #333333;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 21px;
+  display: flex;
+
+  @include m.tablet {
+    margin-left: 16px;
+  }
+}
+
+.input__form-emaill {
+  display: flex;
+  margin-left: 20px;
+  margin-right: 20px;
+  height: 58px;
+  width: 222px;
+  background-color: #f2f2f2;
+
+  @include m.tablet {
+    margin: 0;
+  }
+
+  @include m.desktop {
+    display: grid;
+    grid-template-columns: 87% 13%;
+    height: 58px;
+    width: 100%;
+    background-color: #f2f2f2;
+  }
+}
+
+.emaill-input {
+  padding: 16px;
+  padding-right: 6px;
+  height: 58px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #f2f2f2;
+  border: none;
+  box-sizing: border-box;
+
+  @include m.tablet {
+    width: 237px;
+    margin: 0;
+  }
+
+  @include m.desktop {
+    width: 372px;
+  }
+}
+
+.button__input-form {
+  cursor: pointer;
+  height: 58px;
+  right: -58px;
+  padding: 0;
+  border: none;
+}
