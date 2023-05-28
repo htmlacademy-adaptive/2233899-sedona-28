@@ -1,6 +1,7 @@
 @use "../setup/mixins.scss" as m;
 
 .advantages__description {
+  box-sizing: border-box;
   color: #333333;
   font-weight: 400;
   font-size: 14px;
@@ -12,11 +13,16 @@
   }
 
   @include m.desktop {
-    padding: 0 60px 70px;
+    padding: 0 58px 70px;
   }
 }
 
+.advantages__description-second {
+  padding: 0 30px;
+}
+
 .advantages__description--with-image {
+  padding: 0 16px;
   font-weight: 400;
   font-size: 14px;
   line-height: 21px;
@@ -27,13 +33,13 @@
   }
 
   @include m.desktop {
-    padding: 0 100px 0;
+    padding: 0 90px;
   }
 }
 
 .advantages__description-image {
   @include m.desktop {
-    padding: 0 80px 0;
+    padding: 0 50px;
   }
 }
 

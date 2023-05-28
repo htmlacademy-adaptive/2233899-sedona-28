@@ -6,13 +6,14 @@
   border: none;
 
   @include m.tablet {
-    margin-top: 55px;
+    margin-top: 66px;
   }
 }
 
 .hero {
   height: 389px;
   background-image: url("../img/hero.png");
+  background-position: center top;
 
   @include m.tablet {
     height: 518px;
@@ -31,10 +32,6 @@
 
   @include m.tablet {
     margin-top: 27px;
-  }
-
-  @include m.desktop {
-    margin-top: 50px;
   }
 }
 

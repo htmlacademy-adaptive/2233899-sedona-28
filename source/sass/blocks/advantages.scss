@@ -25,6 +25,8 @@
   }
 
   @include m.desktop {
+    font-size: 21px;
+    padding-top: 53px;
     padding-right: 120px;
     padding-left: 120px;
   }
@@ -32,9 +34,21 @@
 
 .advantages__title--city {
   padding-top: 33px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 26px;
+  margin: 0;
 
   @include m.tablet {
     padding-top: 52px;
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+
+  @include m.desktop {
+    font-size: 21px;
+    padding-right: 120px;
+    padding-left: 120px;
   }
 }
 
@@ -47,20 +61,25 @@
   margin: 0;
 
   @include m.tablet {
-    padding-top: 26px;
-    padding-bottom: 26px;
+    padding-top: 18px;
+    padding-bottom: 24px;
     font-size: 21px;
   }
 }
 
 .advantages__title--third {
-  padding-top: 24px;
+  padding-top: 20px;
   font-weight: 700;
   font-size: 18px;
   line-height: 26px;
   margin: 0;
 
   @include m.tablet {
-    padding: 41px 60px 0;
+    font-size: 21px;
+    padding: 51px 60px 0;
+  }
+
+  @include m.desktop {
+    padding: 51px 121px 0;
   }
 }
